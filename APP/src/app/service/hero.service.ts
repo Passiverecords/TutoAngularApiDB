@@ -7,7 +7,7 @@ import { Hero } from '../class/hero';
 @Injectable({ providedIn: 'root' })
 
 export class HeroService {
-  private heroesUrl = '';  // URL to web api
+  private heroesUrl = 'http://localhost:3000/listeHeros';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})
